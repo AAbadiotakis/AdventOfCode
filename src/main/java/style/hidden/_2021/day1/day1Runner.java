@@ -1,4 +1,4 @@
-package style.hidden.utils._2021.day1;
+package style.hidden._2021.day1;
 
 import style.hidden.utils.FileReaderUtil;
 
