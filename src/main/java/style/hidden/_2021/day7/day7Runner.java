@@ -14,6 +14,7 @@ public class day7Runner {
         int maxInt = horPos.stream().max(Integer::compare).get();
         int minInt = horPos.stream().min(Integer::compare).get();
         int leastFuelUsed = Integer.MAX_VALUE;
+        int leastPosition = 0;
         for(int i = minInt; i < maxInt; i++) {
             int fuelUsed = 0;
             for(int crab : horPos) {
@@ -25,11 +26,13 @@ public class day7Runner {
             }
             System.out.println("i = " + i + " | fuelUsed = " + fuelUsed);
             if(fuelUsed < leastFuelUsed) {
-
+                leastPosition = i;
                 leastFuelUsed= fuelUsed;
             }
         }
         System.out.println("Least Fuel Consumed Possible = " + leastFuelUsed);
+        System.out.println("Position = " + leastPosition);
         System.out.println("Total time taken: " + (System.currentTimeMillis() - startTime));
+        System.out.println("Mean = " + horPos.stream().mapToDouble(a -> a).average());
     }
 }
