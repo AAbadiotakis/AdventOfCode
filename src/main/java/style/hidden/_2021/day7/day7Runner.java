@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 public class day7Runner {
     public static void main(String[] args) throws Exception {
         long startTime = System.currentTimeMillis();
-        List<String> lines = FileReaderUtil.parseFile("day7input.txt");
+        List<String> lines = FileReaderUtil.parseFile("_2021/day7input.txt");
         List<Integer> horPos = Arrays.stream(lines.get(0).split(",")).map(Integer::parseInt).collect(Collectors.toList());
         int maxInt = horPos.stream().max(Integer::compare).get();
         int minInt = horPos.stream().min(Integer::compare).get();

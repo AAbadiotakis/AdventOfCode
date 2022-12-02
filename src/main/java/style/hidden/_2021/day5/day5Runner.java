@@ -6,7 +6,7 @@ import java.util.*;
 
 public class day5Runner {
     public static void main(String[] args) throws Exception {
-        List<String> lines = FileReaderUtil.parseFile("day5input.txt");
+        List<String> lines = FileReaderUtil.parseFile("_2021/day5input.txt");
         Set<Coordinate> coordinates = new HashSet<>();
         int counter = 0;
         Set<Coordinate> overlappedCoordinates = new HashSet<>();

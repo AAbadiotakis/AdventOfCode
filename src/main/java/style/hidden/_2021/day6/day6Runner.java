@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 public class day6Runner {
     public static void main(String[] args) throws Exception {
-        List<String> lines = FileReaderUtil.parseFile("day6input.txt");
+        List<String> lines = FileReaderUtil.parseFile("_2021/day6input.txt");
         List<Integer> ages = Arrays.stream(lines.get(0).split(",")).map(Integer::parseInt).collect(Collectors.toList());
         System.out.println("Initial State: " + ages.toString());
         Map<Integer, Long> fishMap = new HashMap<>();

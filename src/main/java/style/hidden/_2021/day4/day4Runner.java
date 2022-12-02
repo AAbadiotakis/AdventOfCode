@@ -11,7 +11,7 @@ public class day4Runner {
     static final int boardHeight = 5;
 
     public static void main(String[] args) throws Exception {
-        List<String> lines = FileReaderUtil.parseFile("day4input.txt");
+        List<String> lines = FileReaderUtil.parseFile("_2021/day4input.txt");
 
         String firstLine = lines.get(0);
         List<Integer> bingoNumbers = Arrays.stream(firstLine.split(",")).map(Integer::parseInt).collect(Collectors.toList());

@@ -6,7 +6,7 @@ import java.util.List;
 
 public class day1Runner {
     public static void main(String[] args) throws Exception {
-        List<String> lines = FileReaderUtil.parseFile("day1input.txt");
+        List<String> lines = FileReaderUtil.parseFile("_2021/day1input.txt");
         Long previousDepth = null;
         Long secondPreviousDepth = null;
         Long thirdPreviousDepth = null;

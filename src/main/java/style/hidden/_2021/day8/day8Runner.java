@@ -20,7 +20,7 @@ public class day8Runner {
     static final int NUM_NINE = 6;
 
     public static void main(String[] args) throws Exception {
-        List<String> lines = FileReaderUtil.parseFile("day8input.txt");
+        List<String> lines = FileReaderUtil.parseFile("_2021/day8input.txt");
         int counter = 0;
         long part2Answer = 0;
         for(String line : lines) {

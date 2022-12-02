@@ -6,7 +6,7 @@ import java.util.List;
 
 public class day2Runner {
     public static void main(String[] args) throws Exception {
-        List<String> lines = FileReaderUtil.parseFile("day2input.txt");
+        List<String> lines = FileReaderUtil.parseFile("_2021/day2input.txt");
         long horPos = 0;
         long depth = 0;
         long aim = 0;

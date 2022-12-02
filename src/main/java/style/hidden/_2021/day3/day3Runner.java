@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class day3Runner {
     public static void main(String[] args) throws Exception {
-        List<String> lines = FileReaderUtil.parseFile("day3input.txt");
+        List<String> lines = FileReaderUtil.parseFile("_2021/day3input.txt");
         int lineLength = lines.get(0).length();
         int lineSize = lines.size();
         String gammaRate = "";
