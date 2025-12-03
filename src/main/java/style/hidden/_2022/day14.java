@@ -164,8 +164,8 @@ public class day14 extends Runner {
 
 
     class Coordinate {
-        private int x;
-        private int y;
+        int x;
+        int y;
         Coordinate(int x, int y) {
             this.x = x;
             this.y = y;

@@ -3,6 +3,7 @@ package style.hidden.utils;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.Objects;
 
 public abstract class Runner {
 
@@ -12,7 +13,7 @@ public abstract class Runner {
     final List<String> lines;
 
     protected List<String> parseFile(String fileName) throws Exception {
-        return Files.readAllLines(Paths.get(classLoader.getResource(fileName).toURI()));
+        return Files.readAllLines(Paths.get(Objects.requireNonNull(classLoader.getResource(fileName)).toURI()));
     }
 
     protected List<String> getLines() {
