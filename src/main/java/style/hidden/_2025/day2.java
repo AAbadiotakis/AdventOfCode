@@ -11,7 +11,7 @@ public class day2 extends Runner {
         super(path);
     }
 
-    public static void main() throws Exception {
+    static void main() throws Exception {
         Runner runner = new day2("_2025/day2input.txt");
 //        runner.part1Code();
         runner.part2Code();
